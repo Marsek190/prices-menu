@@ -134,17 +134,17 @@ div[id^="img_"] {
 }
 
 #img_1 {
-    background: url('../img/device.svg') center no-repeat;
+    background: url('./img/device.svg') center no-repeat;
     background-size: contain;
 }
 
 #img_2 {
-    background: url('../img/monitor.svg') center no-repeat;
+    background: url('./img/monitor.svg') center no-repeat;
     background-size: contain;
 }
 
 #img_3 {
-    background: url('../img/laptop.svg') center no-repeat;
+    background: url('./img/laptop.svg') center no-repeat;
     background-size: contain;
 }
 
@@ -199,7 +199,7 @@ div[id^="img_"] {
 }
 
 .btn_close {
-    background: url('../img/cross.svg') center no-repeat;
+    background: url('./img/cross.svg') center no-repeat;
     height: 30px;
     width: 30px;
     cursor: pointer;
