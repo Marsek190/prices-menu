@@ -44,6 +44,7 @@ html {
 
 .container {
     justify-content: center;
+    flex-flow: wrap;
 }
 
 .block_content {
@@ -247,6 +248,12 @@ div[id^="img_"] {
 
     .modal_header {
         width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .block_content {
+        width: 90%;
     }
 }
 
