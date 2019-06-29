@@ -1,0 +1,253 @@
+/* ====== MAIN ====== */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(90, 150, 184);
+}
+
+.container,
+.items_section,
+.card_item,
+.btn_section,
+.modal_content,
+.modal_content,
+.modal_wrapper,
+.modal_header {
+    display: flex;
+    align-items: center;
+}
+
+.block_content,
+.items_section,
+.card_item,
+.btn_section,
+.modal_card {
+    border-radius: 5px;
+}
+
+.items_section,
+.btn_section {
+    width: inherit;
+}
+
+.card_item,
+.container {
+    height: inherit;
+}
+
+.container {
+    justify-content: center;
+}
+
+.block_content {
+    width: 900px;
+    height: 380px;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15),
+        0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.items_section {
+    height: 83%;
+    justify-content: space-evenly;
+}
+
+.card_item {
+    width: 31%;
+    height: 95%;
+    cursor: pointer;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: background-color 0.3s;
+}
+
+span,
+h3,
+h4,
+.type_device {
+    font-family: "Geometria";
+}
+
+.type_device {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+span {
+    font-size: 14px;
+    color: gray;
+}
+
+h4 {
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+sup {
+    font-size: 16px;
+}
+
+.small {
+    text-transform: lowercase;
+    color: mediumslateblue;
+}
+
+h4,
+small,
+.type_device {
+    color: mediumslateblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card_item:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.btn_section {
+    height: 17%;
+    justify-content: center;
+}
+
+.btn {
+    width: 140px;
+    height: 40px;
+    background-color: #4662cc;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+div[id^="img_"] {
+    width: 80%;
+    height: 100px;
+}
+
+#img_1 {
+    background: url('../img/device.svg') center no-repeat;
+    background-size: contain;
+}
+
+#img_2 {
+    background: url('../img/monitor.svg') center no-repeat;
+    background-size: contain;
+}
+
+#img_3 {
+    background: url('../img/laptop.svg') center no-repeat;
+    background-size: contain;
+}
+
+.modal_wrapper {
+    position: fixed;
+    justify-content: center;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.modal_card {
+    z-index: 9999;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modal_card__hidden,
+.modal_wrapper__hidden {
+    display: none;
+}
+
+.modal_content {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 73%;
+}
+
+.modal_header {
+    width: inherit;
+    height: 10%;
+    justify-content: space-between;
+}
+
+.desc {
+    width: 85%;
+    text-align: justify;
+}
+
+.modal_header h3 {
+    margin: 0 auto;
+    padding-left: 40px;
+    align-self: flex-end;
+    font-family: "Nunito";
+}
+
+.btn_close {
+    background: url('../img/cross.svg') center no-repeat;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* ====== MEDIA ====== */
+
+@media (max-width: 910px) {
+    .block_content {
+        width: 95%;
+    }
+
+    .items_section,
+    .btn_section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .block_content {
+        width: 380px;
+        height: 900px;
+    }
+
+    .items_section {
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .card_item {
+        width: 91%;
+        margin-top: 15px;
+    }
+
+    .btn_section {
+        height: 10%;
+    }
+}
+
+@media (max-width: 510px) {
+    .modal_card {
+        width: 90%;
+    }
+
+    .modal_header {
+        width: 100%;
+    }
+}
+
+/* ====== END ====== */
